@@ -16,6 +16,10 @@
 		0BFFE69F1E175694004EF4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFE6A11E175694004EF4C3 /* InfoPlist.strings */; };
 		0BFFE6A61E175757004EF4C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFE6A81E175757004EF4C3 /* Localizable.strings */; };
 		0BFFE6AB1E1758A2004EF4C3 /* RandomNumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */; };
+		0BFFE6B31E181F08004EF4C3 /* INSDataStackContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6AF1E181F08004EF4C3 /* INSDataStackContainer.swift */; };
+		0BFFE6B41E181F08004EF4C3 /* INSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6B01E181F08004EF4C3 /* INSPersistentContainer.swift */; };
+		0BFFE6B51E181F08004EF4C3 /* INSPersistentStoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6B11E181F08004EF4C3 /* INSPersistentStoreDescription.swift */; };
+		0BFFE6B61E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6B21E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		0BFFE6A71E175757004EF4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0BFFE6A91E17579C004EF4C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumViewController.swift; sourceTree = "<group>"; };
+		0BFFE6AF1E181F08004EF4C3 /* INSDataStackContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSDataStackContainer.swift; sourceTree = "<group>"; };
+		0BFFE6B01E181F08004EF4C3 /* INSPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSPersistentContainer.swift; sourceTree = "<group>"; };
+		0BFFE6B11E181F08004EF4C3 /* INSPersistentStoreDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSPersistentStoreDescription.swift; sourceTree = "<group>"; };
+		0BFFE6B21E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+iOS10Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 		0B4BC16F1E174DDC00A32D24 = {
 			isa = PBXGroup;
 			children = (
+				0BFFE6AE1E181F08004EF4C3 /* INSPersistentContainer */,
 				0B4BC17A1E174DDC00A32D24 /* RandomNum */,
 				0B4BC1791E174DDC00A32D24 /* Products */,
 			);
@@ -77,6 +86,18 @@
 				0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */,
 			);
 			path = RandomNum;
+			sourceTree = "<group>";
+		};
+		0BFFE6AE1E181F08004EF4C3 /* INSPersistentContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0BFFE6AF1E181F08004EF4C3 /* INSDataStackContainer.swift */,
+				0BFFE6B01E181F08004EF4C3 /* INSPersistentContainer.swift */,
+				0BFFE6B11E181F08004EF4C3 /* INSPersistentStoreDescription.swift */,
+				0BFFE6B21E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift */,
+			);
+			name = INSPersistentContainer;
+			path = RandomNum/INSPersistentContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFFE6AB1E1758A2004EF4C3 /* RandomNumViewController.swift in Sources */,
+				0BFFE6B41E181F08004EF4C3 /* INSPersistentContainer.swift in Sources */,
 				0B4BC17E1E174DDC00A32D24 /* ViewController.swift in Sources */,
 				0B4BC17C1E174DDC00A32D24 /* AppDelegate.swift in Sources */,
 				0B4BC1841E174DDC00A32D24 /* RandomNum.xcdatamodeld in Sources */,
+				0BFFE6B51E181F08004EF4C3 /* INSPersistentStoreDescription.swift in Sources */,
+				0BFFE6B61E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift in Sources */,
+				0BFFE6B31E181F08004EF4C3 /* INSDataStackContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = RandomNum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xigk.RandomNum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -318,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = RandomNum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xigk.RandomNum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
