@@ -15,15 +15,21 @@ var arrRandomNum:[RandomData] = []
 var arrGlobalSet:[CurGlobalSet] = []
 var nowGlobalSet:CurGlobalSet?
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ColorPickerDelegate {
 
     @IBOutlet weak var btnGo: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
+
+        
+        
+        
         self.title = NSLocalizedString("Setting", comment: "")
     }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         getCoreData()
@@ -41,7 +47,7 @@ class ViewController: UIViewController {
         
         self.present(ranViewController, animated: true) {
         }
-        
+
     }
 
     func getCoreData() -> Void {
@@ -83,6 +89,26 @@ class ViewController: UIViewController {
         getCoreData()
     }
     
+    
+    func ColorColorPickerTouched(sender: ColorPicker, color: UIColor, point: CGPoint, state: UIGestureRecognizerState)
+    {
+        btnGo.backgroundColor = color
+        sender.removeFromSuperview()
+    }
 
+    // 打开颜色选择器
+    func openSelColorView() -> Void {
+        let pickerWidth = self.view.frame.size.width
+        let pickerHeight = (pickerWidth * 11) / 19
+        let colorPicker = ColorPicker(frame: CGRect(
+            x: 0,
+            y: self.view.frame.size.height / 2 - pickerHeight / 2,
+            width: pickerWidth,
+            height: pickerHeight
+        ))
+        
+        colorPicker.delegate = self
+        self.view.addSubview(colorPicker)
+    }
 }
 

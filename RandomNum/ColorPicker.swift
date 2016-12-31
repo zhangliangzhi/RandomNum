@@ -1,5 +1,5 @@
 //
-//  ColorSelect.swift
+//  ColorPicker.swift
 //  RandomNum
 //
 //  Created by ZhangLiangZhi on 2017/1/1.
