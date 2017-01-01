@@ -35,7 +35,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         tfStartNum.delegate = self
         tfEndNum.delegate = self
         
-        
+        tfStartNum.inputAccessoryView = AddToolBar()
         
         self.title = NSLocalizedString("Setting", comment: "")
     }
@@ -44,6 +44,23 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(false)
     }
+    
+    func AddToolBar() -> UIToolbar {
+        let toolBar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 35))
+//        toolBar.tintColor = UIColor.blue
+        toolBar.backgroundColor = UIColor.gray
+        let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let barBtn = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(doneNum))
+        toolBar.items = [spaceBtn, barBtn]
+        
+        return toolBar
+    }
+    
+    func doneNum() {
+        self.view.endEditing(false)
+    }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         getCoreData()
