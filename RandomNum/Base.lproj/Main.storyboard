@@ -39,7 +39,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-3r-CDf">
                                 <rect key="frame" x="152" y="96" width="16" height="30"/>
@@ -54,7 +54,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Font:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyo-AG-Lrs">
                                 <rect key="frame" x="0.0" y="138" width="160" height="21"/>
@@ -70,13 +70,13 @@
                                 <rect key="frame" x="168" y="133" width="116" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Count" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMB-cT-Kne">
                                 <rect key="frame" x="168" y="171" width="116" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Count:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-6y-KRR">
                                 <rect key="frame" x="0.0" y="176" width="160" height="21"/>
@@ -94,7 +94,7 @@
                                 <rect key="frame" x="36" y="226" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg5-oE-2ww">
                                 <rect key="frame" x="0.0" y="264" width="160" height="21"/>
@@ -121,8 +121,8 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-5L-712">
-                                <rect key="frame" x="137" y="370" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="145" y="370" width="30" height="30"/>
+                                <state key="normal" title="GO "/>
                                 <connections>
                                     <action selector="goRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbi-BV-3gt"/>
                                 </connections>
@@ -191,6 +191,11 @@
                     <navigationItem key="navigationItem" id="x3B-YQ-iZI"/>
                     <connections>
                         <outlet property="btnGo" destination="qlE-5L-712" id="Jk7-jN-HTg"/>
+                        <outlet property="tfEndNum" destination="fIi-UU-747" id="kym-dk-L4y"/>
+                        <outlet property="tfFontNum" destination="Jsp-54-0eD" id="vnr-MO-Z2F"/>
+                        <outlet property="tfRepeatNum" destination="DMB-cT-Kne" id="V2M-9e-JQp"/>
+                        <outlet property="tfStartNum" destination="OqR-Hx-syZ" id="osH-rC-3Zm"/>
+                        <outlet property="tfTitle" destination="GVu-cO-6Kc" id="Nf1-CS-0ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

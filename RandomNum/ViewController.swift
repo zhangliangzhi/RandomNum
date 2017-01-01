@@ -15,21 +15,35 @@ var arrRandomNum:[RandomData] = []
 var arrGlobalSet:[CurGlobalSet] = []
 var nowGlobalSet:CurGlobalSet?
 
-class ViewController: UIViewController, ColorPickerDelegate {
 
+class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate {
+
+
+    
     @IBOutlet weak var btnGo: UIButton!
+    @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var tfRepeatNum: UITextField!
+    @IBOutlet weak var tfFontNum: UITextField!
+    @IBOutlet weak var tfEndNum: UITextField!
+    @IBOutlet weak var tfStartNum: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
 
-
+        tfStartNum.delegate = self
+        tfEndNum.delegate = self
         
         
         
         self.title = NSLocalizedString("Setting", comment: "")
     }
     
-
+    // 点击空白，取消键盘
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(false)
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         getCoreData()
