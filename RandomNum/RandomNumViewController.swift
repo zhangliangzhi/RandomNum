@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class RandomNumViewController: UIViewController {
 
@@ -20,29 +21,37 @@ class RandomNumViewController: UIViewController {
     @IBOutlet weak var numLabel: UILabel!
     
     var isStart:Bool = true
+    var tmpID:Int64 = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
+        setNewBtnStatue()
+        numLabel.text = "-"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        // 是否开始了
-        setNewBtnStatue()
+
     }
     
     // 点击开始
     @IBAction func btnClickAction(_ sender: Any) {
-
+        let startID:Int64 = (nowGlobalSet?.startID)!
+        let endID:Int64 = (nowGlobalSet?.endID)!
+        let dID = endID - startID
         
         // 改变了一次状态
         if self.isStart {
             // 开始 播放随机数动画
-            
+            let ndID:UInt32 = UInt32(dID)
+            tmpID = Int64(arc4random_uniform(ndID+1))
+            tmpID = tmpID + startID
+            numLabel.text = String(tmpID)
         }else {
             // 结束 保存数据
-            
+            let oneRandomData = NSEntityDescription.insertNewObject(forEntityName: "RandomData", into: context) as! RandomData
+            oneRandomData.curTime = NSDate()
+            oneRandomData.num = tmpID
+            appDelegate.saveContext()
         }
         
         // 改变按钮 文字显示状态
@@ -100,10 +109,10 @@ class RandomNumViewController: UIViewController {
         let issta:Bool = self.isStart
         if issta {
             self.isStart = false
-            btnClick.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
+            btnClick.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
         }else {
             self.isStart = true
-            btnClick.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
+            btnClick.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
         }
         
     }
