@@ -27,3 +27,6 @@
 "Enter Num Font"        = "输入数字字体";
 "Enter Repeat Count"    = "输入重复次数";
 "Enter custom title"    = "输入自定义名称,点击返回";
+
+"Start" = "开始";
+"Stop"  = "停止";

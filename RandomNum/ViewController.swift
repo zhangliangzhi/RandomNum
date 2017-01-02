@@ -71,6 +71,9 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        var strTitle:String = textField.text!
+        strTitle = strTitle.trimmingCharacters(in: .whitespaces)
+        nowGlobalSet?.title = strTitle
         
         textField.resignFirstResponder()
         return true

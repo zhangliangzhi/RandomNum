@@ -19,14 +19,34 @@ class RandomNumViewController: UIViewController {
 
     @IBOutlet weak var numLabel: UILabel!
     
+    var isStart:Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        // 是否开始了
+        setNewBtnStatue()
+    }
+    
     // 点击开始
     @IBAction func btnClickAction(_ sender: Any) {
+
+        
+        // 改变了一次状态
+        if self.isStart {
+            // 开始 播放随机数动画
+            
+        }else {
+            // 结束 保存数据
+            
+        }
+        
+        // 改变按钮 文字显示状态
+        setNewBtnStatue()
     }
     
     // 点击显示日志
@@ -76,4 +96,15 @@ class RandomNumViewController: UIViewController {
 
     }
 
+    func setNewBtnStatue() {
+        let issta:Bool = self.isStart
+        if issta {
+            self.isStart = false
+            btnClick.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
+        }else {
+            self.isStart = true
+            btnClick.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
+        }
+        
+    }
 }
