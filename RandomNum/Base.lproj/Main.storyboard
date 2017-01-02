@@ -99,14 +99,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg5-oE-2ww">
                                 <rect key="frame" x="0.0" y="264" width="160" height="21"/>
                                 <state key="normal" title="Set Title color:"/>
+                                <connections>
+                                    <action selector="setTitleColorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5e-fm-XlC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-Qs-OdS">
                                 <rect key="frame" x="0.0" y="293" width="160" height="21"/>
                                 <state key="normal" title="Set Number color:"/>
+                                <connections>
+                                    <action selector="setNumColorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4L-Ya-Weh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jll-aw-ybY">
                                 <rect key="frame" x="0.0" y="322" width="160" height="21"/>
                                 <state key="normal" title="Set background color:"/>
+                                <connections>
+                                    <action selector="setBgColorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huH-VQ-X64"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-VR-GPD">
                                 <rect key="frame" x="168" y="260" width="116" height="25"/>
@@ -121,8 +130,8 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-5L-712">
-                                <rect key="frame" x="145" y="370" width="30" height="30"/>
-                                <state key="normal" title="GO "/>
+                                <rect key="frame" x="117" y="370" width="86" height="30"/>
+                                <state key="normal" title="My Interface"/>
                                 <connections>
                                     <action selector="goRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbi-BV-3gt"/>
                                 </connections>
@@ -203,6 +212,9 @@
                         <outlet property="tfRepeatNum" destination="DMB-cT-Kne" id="V2M-9e-JQp"/>
                         <outlet property="tfStartNum" destination="OqR-Hx-syZ" id="osH-rC-3Zm"/>
                         <outlet property="tfTitle" destination="GVu-cO-6Kc" id="Nf1-CS-0ce"/>
+                        <outlet property="viewBgColor" destination="ABI-6Z-v76" id="xfI-Re-Mdo"/>
+                        <outlet property="viewNumColor" destination="0OB-tr-Loc" id="4sJ-8y-Abv"/>
+                        <outlet property="viewTitleColor" destination="ahV-VR-GPD" id="vhE-JY-cmb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

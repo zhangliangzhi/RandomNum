@@ -18,7 +18,9 @@ var nowGlobalSet:CurGlobalSet?
 
 class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate {
 
-
+    @IBOutlet weak var viewBgColor: UIView!
+    @IBOutlet weak var viewNumColor: UIView!
+    @IBOutlet weak var viewTitleColor: UIView!
     
     @IBOutlet weak var btnGo: UIButton!
     @IBOutlet weak var btnbgColor: UIButton!
@@ -40,9 +42,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         super.viewDidLoad()
 
         
-
-        tfStartNum.delegate = self
-        tfEndNum.delegate = self
+        tfTitle.delegate = self
         
         tfStartNum.inputAccessoryView = AddToolBar()
         tfEndNum.inputAccessoryView = AddToolBar()
@@ -62,12 +62,20 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         let toolBar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 35))
 //        toolBar.tintColor = UIColor.blue
         toolBar.backgroundColor = UIColor.gray
+
         let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let barBtn = UIBarButtonItem(title: NSLocalizedString("Done", comment: ""), style: .plain, target: self, action: #selector(doneNum))
         toolBar.items = [spaceBtn, barBtn]
         
         return toolBar
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+    }
+
     
     func doneNum() {
         // 关闭界面
@@ -182,7 +190,9 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         btnTitleColor.setTitle(NSLocalizedString("Set Title color:", comment: ""), for: .normal)
         btnNumColor.setTitle(NSLocalizedString("Set number color:" , comment: ""), for: .normal)
         btnbgColor.setTitle(NSLocalizedString("Set bakcground color:", comment: ""), for: .normal)
-        btnGo.setTitle(NSLocalizedString("MY UI", comment: ""), for: .normal)
+        btnGo.setTitle(NSLocalizedString("My Interface", comment: ""), for: .normal)
+        
+        // 设置按钮颜色
         
     }
     
@@ -269,5 +279,17 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         colorPicker.delegate = self
         self.view.addSubview(colorPicker)
     }
+    
+    @IBAction func setTitleColorAction(_ sender: Any) {
+        openSelColorView()
+    }
+    
+    @IBAction func setBgColorAction(_ sender: Any) {
+    }
+    
+    @IBAction func setNumColorAction(_ sender: Any) {
+    }
+
+    
 }
 

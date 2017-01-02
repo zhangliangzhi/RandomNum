@@ -20,10 +20,10 @@
 "Set Title color:"      = "Set Title color:";
 "Set number color:"     = "Set number color:";
 "Set bakcground color:" = "Set bakcground color:";
-"MY UI"                 = "MY UI";
+"My Interface"          = "My Interface";
 
 "Start Number"          = "Start Number";
 "End Number"            = "End Number";
 "Enter Num Font"        = "Enter Num Font";
 "Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title";
+"Enter custom title"    = "Enter custom title, click back";
