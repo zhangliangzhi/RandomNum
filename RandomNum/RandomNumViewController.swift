@@ -14,6 +14,7 @@ class RandomNumViewController: UIViewController {
     @IBOutlet weak var btnClick: UIButton!
     
     @IBOutlet weak var bgView: UIView!
+
     @IBOutlet weak var numLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,9 +23,16 @@ class RandomNumViewController: UIViewController {
         
     }
     
+    // 点击开始
     @IBAction func btnClickAction(_ sender: Any) {
     }
+    
+    // 点击显示日志
+    @IBAction func showLogAction(_ sender: Any) {
+        print("show ok log")
+    }
 
+    // 返回
     @IBAction func goBack(_ sender: Any) {
         let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
         
@@ -41,17 +49,27 @@ class RandomNumViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        // 名称
         let txtColor = UIColor(netHex: Int((nowGlobalSet?.titleRGB)!))
         btnTitle.setTitleColor(txtColor, for: .normal)
-        btnClick.setTitleColor(txtColor, for: .normal)
+        btnTitle.setTitle(nowGlobalSet?.title, for: .normal)
         
+        // 数字
         let numColor = UIColor(netHex: Int((nowGlobalSet?.numRGB)!))
         numLabel.textColor = numColor
+        let isize:Int = Int((nowGlobalSet?.numFont)!)
+        numLabel.font = UIFont(name: "Arial-BoldMT", size: CGFloat(isize))
+
+        numLabel.adjustsFontSizeToFitWidth = true
+        numLabel.isHighlighted = true
         
+        // 背景颜色
         let bgColor = UIColor(netHex: Int((nowGlobalSet?.bgRGB)!))
         self.view.backgroundColor = bgColor
         bgView.backgroundColor = bgColor
+
+        // 按钮颜色
+        btnClick.setTitleColor(numColor, for: .normal)
 
     }
 
