@@ -6,9 +6,22 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting" = "Setting";
-"Set Title" = "Set Title";
+"Setting" = "RandomNum";
+"Set custom title" = "Set custom title";
 "Done" = "Done";
 "Can not be empty" = "Can not be empty";
 "Must be number" = "Must be number";
 "Set success" = "Set success";
+
+"Random range:"         = "Random range:";
+"Number Font:"          = "Number Font:";
+"Repeat Count:"         = "Repeat Count:";
+"Set View Title:"       = "Set View Title:";
+"Set Title color:"      = "Set Title color:";
+"Set number color:"     = "Set number color:";
+"Set bakcground color:" = "Set bakcground color:";
+"Random Number"         = "Random Number";
+
+"Start Number"          = "Start Number";
+"End Number"            = "End Number";
+"Enter custom title"    = "Enter custom title";

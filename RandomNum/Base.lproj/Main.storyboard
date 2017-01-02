@@ -23,9 +23,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random range：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-BV-cyT">
-                                <rect key="frame" x="80" y="74" width="160" height="21"/>
+                                <rect key="frame" x="10" y="74" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Rgt-PJ-Udh"/>
+                                    <constraint firstAttribute="width" constant="300" id="Rgt-PJ-Udh"/>
                                     <constraint firstAttribute="height" constant="21" id="t27-xF-CBJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set View Title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHs-i7-tRO">
-                                <rect key="frame" x="80" y="205" width="160" height="21"/>
+                                <rect key="frame" x="10" y="205" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -191,6 +191,13 @@
                     <navigationItem key="navigationItem" id="x3B-YQ-iZI"/>
                     <connections>
                         <outlet property="btnGo" destination="qlE-5L-712" id="Jk7-jN-HTg"/>
+                        <outlet property="btnNumColor" destination="Lno-Qs-OdS" id="8Bc-5A-Gog"/>
+                        <outlet property="btnTitleColor" destination="Pg5-oE-2ww" id="kDH-sm-DOD"/>
+                        <outlet property="btnbgColor" destination="jll-aw-ybY" id="ekN-ha-Khm"/>
+                        <outlet property="lblCount" destination="t1z-6y-KRR" id="Ijq-vg-p0l"/>
+                        <outlet property="lblFont" destination="Kyo-AG-Lrs" id="Fuq-gO-8rM"/>
+                        <outlet property="lblRange" destination="1bD-BV-cyT" id="QKU-qz-5Pf"/>
+                        <outlet property="lblTitle" destination="uHs-i7-tRO" id="LC6-gJ-ccU"/>
                         <outlet property="tfEndNum" destination="fIi-UU-747" id="kym-dk-L4y"/>
                         <outlet property="tfFontNum" destination="Jsp-54-0eD" id="vnr-MO-Z2F"/>
                         <outlet property="tfRepeatNum" destination="DMB-cT-Kne" id="V2M-9e-JQp"/>

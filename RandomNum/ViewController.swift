@@ -21,6 +21,15 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
 
     
     @IBOutlet weak var btnGo: UIButton!
+    @IBOutlet weak var btnbgColor: UIButton!
+    @IBOutlet weak var btnNumColor: UIButton!
+    @IBOutlet weak var btnTitleColor: UIButton!
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblCount: UILabel!
+    @IBOutlet weak var lblFont: UILabel!
+    @IBOutlet weak var lblRange: UILabel!
+    
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tfRepeatNum: UITextField!
     @IBOutlet weak var tfFontNum: UITextField!
@@ -45,6 +54,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     
     // 点击空白，取消键盘
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        doneNum()
         self.view.endEditing(false)
     }
     
@@ -149,12 +159,33 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     }
     
     func initDataFromCoreData() {
+        // coreData数据
+        tfStartNum.text = String(format: "%d", (nowGlobalSet?.startID)!)
+        tfEndNum.text = String(format: "%d", (nowGlobalSet?.endID)!)
+        tfFontNum.text = String(format: "%d", (nowGlobalSet?.numFont)!)
+        tfRepeatNum.text = String(format: "%d", (nowGlobalSet?.repeatNum)!)
+        tfTitle.text = nowGlobalSet?.title
+        
+        tfStartNum.placeholder = NSLocalizedString("Random range:", comment: "")
+        
+        // 文本多语言数据
+        lblRange.text = NSLocalizedString("Random range:", comment: "")
+        lblFont.text = NSLocalizedString("Number Font:", comment: "")
+        lblCount.text = NSLocalizedString("Repeat Count:", comment: "")
+        lblTitle.text = NSLocalizedString("Set View Title:", comment: "")
+        
+        // 按钮名字多语言
+        btnTitleColor.setTitle(NSLocalizedString("Set Title color:", comment: ""), for: .normal)
+        btnNumColor.setTitle(NSLocalizedString("Set number color:" , comment: ""), for: .normal)
+        btnbgColor.setTitle(NSLocalizedString("Set bakcground color:", comment: ""), for: .normal)
+        btnGo.setTitle(NSLocalizedString("Random Number", comment: ""), for: .normal)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         getCoreData()
         firstOpenAPP()
+        initDataFromCoreData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -201,10 +232,13 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         }
         
         let oneGlobalSet = NSEntityDescription.insertNewObject(forEntityName: "CurGlobalSet", into: context) as! CurGlobalSet
-        oneGlobalSet.title = NSLocalizedString("Set Title", comment: "")
+        
+        oneGlobalSet.title = NSLocalizedString("Set custom title", comment: "")
         oneGlobalSet.endID = 3
         oneGlobalSet.startID = 1
         oneGlobalSet.repeatNum = 0
+        oneGlobalSet.numFont = 60
+        
         context.insert(oneGlobalSet)
         appDelegate.saveContext()
         getCoreData()

@@ -6,9 +6,22 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting" = "设置";
-"Set Title" = "设置标题";
+"Setting" = "随机数";
+"Set custom title" = "设置标题";
 "Done" = "完成";
 "Can not be empty" = "不能为空";
 "Must be number" = "必须是数字";
 "Set success" = "设置成功";
+
+"Random range:"         = "随机范围:";
+"Number Font:"          = "数字字体:";
+"Repeat Count:"         = "重复次数:";
+"Set View Title:"       = "设置自定义界面名字:";
+"Set Title color:"      = "设置标题颜色:";
+"Set number color:"     = "设置数字颜色:";
+"Set bakcground color:" = "设置背景颜色:";
+"Random Number"         = "随机数";
+
+"Start Number"          = "开始数字";
+"End Number"            = "结束数字";
+"Enter custom title"    = "输入自定义名称";
