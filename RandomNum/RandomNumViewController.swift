@@ -10,6 +10,7 @@ import UIKit
 
 class RandomNumViewController: UIViewController {
 
+
     @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var btnClick: UIButton!
@@ -34,7 +35,7 @@ class RandomNumViewController: UIViewController {
     }
 
     // 返回
-    @IBAction func backAction(_ sender: Any) {
+    @IBAction func goBack(_ sender: Any) {
         let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
         
         self.present(rootViewController, animated: true) {
