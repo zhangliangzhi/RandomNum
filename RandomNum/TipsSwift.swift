@@ -13,7 +13,7 @@ import UIKit
 /**
  *  Toast默认停留时间
  */
-private let ToastDispalyDuration:CGFloat  = 1.2
+private let ToastDispalyDuration:CGFloat  = 2
 /**
  *  Toast到顶端/底端默认距离
  */

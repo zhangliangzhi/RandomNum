@@ -9,3 +9,6 @@
 "Setting" = "Setting";
 "Set Title" = "Set Title";
 "Done" = "Done";
+"Can not be empty" = "Can not be empty";
+"Must be number" = "Must be number";
+"Set success" = "Set success";

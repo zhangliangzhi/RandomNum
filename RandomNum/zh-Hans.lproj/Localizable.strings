@@ -9,3 +9,6 @@
 "Setting" = "设置";
 "Set Title" = "设置标题";
 "Done" = "完成";
+"Can not be empty" = "不能为空";
+"Must be number" = "必须是数字";
+"Set success" = "设置成功";

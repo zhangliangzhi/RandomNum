@@ -60,26 +60,97 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     }
     
     func doneNum() {
+        // 关闭界面
+        DispatchQueue.main.async {
+            self.view.endEditing(false)
+        }
+        
+        // 保持数值
         if tfStartNum.isFirstResponder {
-            print("start",tfStartNum.text)
+//            print("start",tfStartNum.text)
+            var strStartID:String = tfStartNum.text!
+            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
+            if strStartID == "" {
+                TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
+                return
+            }
+            let iNum = Int64(strStartID)
+            if iNum == nil {
+                TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
+                return
+            }
+            
+            nowGlobalSet?.startID = iNum!
+            appDelegate.saveContext()
+            TipsSwift.showTopWithText(NSLocalizedString("Set success", comment: ""))
+            return
         }
         
         if tfEndNum.isFirstResponder {
-            print("end",tfEndNum.text)
+//            print("end",tfEndNum.text)
+            var strStartID:String = tfEndNum.text!
+            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
+            if strStartID == "" {
+                TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
+                return
+            }
+            let iNum = Int64(strStartID)
+            if iNum == nil {
+                TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
+                return
+            }
+            
+            nowGlobalSet?.endID = iNum!
+            appDelegate.saveContext()
+            TipsSwift.showTopWithText(NSLocalizedString("Set success", comment: ""))
+            return
         }
         
         if tfFontNum.isFirstResponder {
-            print("font",tfFontNum.text)
+//            print("font",tfFontNum.text)
+            var strStartID:String = tfFontNum.text!
+            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
+            if strStartID == "" {
+                TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
+                return
+            }
+            let iNum = Int32(strStartID)
+            if iNum == nil {
+                TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
+                return
+            }
+            
+            nowGlobalSet?.numFont = iNum!
+            appDelegate.saveContext()
+            TipsSwift.showTopWithText(NSLocalizedString("Set success", comment: ""))
+            return
         }
         
         if tfRepeatNum.isFirstResponder {
-            print("count",tfRepeatNum.text)
+//            print("count",tfRepeatNum.text)
+            var strStartID:String = tfRepeatNum.text!
+            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
+            if strStartID == "" {
+                TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
+                return
+            }
+            let iNum = Int64(strStartID)
+            if iNum == nil {
+                TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
+                return
+            }
+            
+            nowGlobalSet?.repeatNum = iNum!
+            appDelegate.saveContext()
+            TipsSwift.showTopWithText(NSLocalizedString("Set success", comment: ""))
+            return
         }
         
-        self.view.endEditing(false)
     }
     
-
+    func initDataFromCoreData() {
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         getCoreData()

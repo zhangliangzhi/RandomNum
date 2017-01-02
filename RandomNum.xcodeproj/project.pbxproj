@@ -13,6 +13,7 @@
 		0B4BC1841E174DDC00A32D24 /* RandomNum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BC1821E174DDC00A32D24 /* RandomNum.xcdatamodeld */; };
 		0B4BC1861E174DDC00A32D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4BC1851E174DDC00A32D24 /* Assets.xcassets */; };
 		0B4BC1891E174DDC00A32D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4BC1871E174DDC00A32D24 /* LaunchScreen.storyboard */; };
+		0B9619D91E1A59CC00632388 /* TipsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9619D81E1A59CC00632388 /* TipsSwift.swift */; };
 		0BFFE69F1E175694004EF4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFE6A11E175694004EF4C3 /* InfoPlist.strings */; };
 		0BFFE6A61E175757004EF4C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFE6A81E175757004EF4C3 /* Localizable.strings */; };
 		0BFFE6AB1E1758A2004EF4C3 /* RandomNumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */; };
@@ -32,6 +33,7 @@
 		0B4BC1851E174DDC00A32D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B4BC1881E174DDC00A32D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4BC18A1E174DDD00A32D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9619D81E1A59CC00632388 /* TipsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsSwift.swift; sourceTree = "<group>"; };
 		0BFFE6A01E175694004EF4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BFFE6A21E1756BC004EF4C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0BFFE6A31E175708004EF4C3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				0B4BC18A1E174DDD00A32D24 /* Info.plist */,
 				0B4BC1821E174DDC00A32D24 /* RandomNum.xcdatamodeld */,
 				0BFFE6CF1E182F5C004EF4C3 /* ColorPicker.swift */,
+				0B9619D81E1A59CC00632388 /* TipsSwift.swift */,
 				0BFFE6A11E175694004EF4C3 /* InfoPlist.strings */,
 				0BFFE6A81E175757004EF4C3 /* Localizable.strings */,
 			);
@@ -187,6 +190,7 @@
 				0B4BC1841E174DDC00A32D24 /* RandomNum.xcdatamodeld in Sources */,
 				0BFFE6D01E182F5C004EF4C3 /* ColorPicker.swift in Sources */,
 				0BFFE6B51E181F08004EF4C3 /* INSPersistentStoreDescription.swift in Sources */,
+				0B9619D91E1A59CC00632388 /* TipsSwift.swift in Sources */,
 				0BFFE6B61E181F08004EF4C3 /* NSManagedObjectContext+iOS10Additions.swift in Sources */,
 				0BFFE6B31E181F08004EF4C3 /* INSDataStackContainer.swift in Sources */,
 			);
