@@ -20,8 +20,10 @@
 "Set Title color:"      = "设置标题颜色:";
 "Set number color:"     = "设置数字颜色:";
 "Set bakcground color:" = "设置背景颜色:";
-"Random Number"         = "随机数";
+"MY UI"                 = "我的界面";
 
 "Start Number"          = "开始数字";
 "End Number"            = "结束数字";
+"Enter Num Font"        = "输入数字字体";
+"Enter Repeat Count"    = "输入重复次数";
 "Enter custom title"    = "输入自定义名称";

@@ -20,8 +20,10 @@
 "Set Title color:"      = "Set Title color:";
 "Set number color:"     = "Set number color:";
 "Set bakcground color:" = "Set bakcground color:";
-"Random Number"         = "Random Number";
+"MY UI"                 = "MY UI";
 
 "Start Number"          = "Start Number";
 "End Number"            = "End Number";
+"Enter Num Font"        = "Enter Num Font";
+"Enter Repeat Count"    = "Enter Repeat Count";
 "Enter custom title"    = "Enter custom title";

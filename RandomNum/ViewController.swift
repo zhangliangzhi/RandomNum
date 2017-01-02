@@ -166,7 +166,11 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         tfRepeatNum.text = String(format: "%d", (nowGlobalSet?.repeatNum)!)
         tfTitle.text = nowGlobalSet?.title
         
-        tfStartNum.placeholder = NSLocalizedString("Random range:", comment: "")
+        tfStartNum.placeholder = NSLocalizedString("Start Number", comment: "")
+        tfEndNum.placeholder = NSLocalizedString("End Number", comment: "")
+        tfFontNum.placeholder = NSLocalizedString("Enter Num Font" , comment: "")
+        tfRepeatNum.placeholder = NSLocalizedString("Enter Repeat Count", comment: "")
+        tfTitle.placeholder = NSLocalizedString("Enter custom title", comment: "")
         
         // 文本多语言数据
         lblRange.text = NSLocalizedString("Random range:", comment: "")
@@ -178,7 +182,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         btnTitleColor.setTitle(NSLocalizedString("Set Title color:", comment: ""), for: .normal)
         btnNumColor.setTitle(NSLocalizedString("Set number color:" , comment: ""), for: .normal)
         btnbgColor.setTitle(NSLocalizedString("Set bakcground color:", comment: ""), for: .normal)
-        btnGo.setTitle(NSLocalizedString("Random Number", comment: ""), for: .normal)
+        btnGo.setTitle(NSLocalizedString("MY UI", comment: ""), for: .normal)
         
     }
     
