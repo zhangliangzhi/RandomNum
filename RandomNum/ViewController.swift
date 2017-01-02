@@ -36,6 +36,9 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         tfEndNum.delegate = self
         
         tfStartNum.inputAccessoryView = AddToolBar()
+        tfEndNum.inputAccessoryView = AddToolBar()
+        tfFontNum.inputAccessoryView = AddToolBar()
+        tfRepeatNum.inputAccessoryView = AddToolBar()
         
         self.title = NSLocalizedString("Setting", comment: "")
     }
@@ -50,13 +53,29 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
 //        toolBar.tintColor = UIColor.blue
         toolBar.backgroundColor = UIColor.gray
         let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let barBtn = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(doneNum))
+        let barBtn = UIBarButtonItem(title: NSLocalizedString("Done", comment: ""), style: .plain, target: self, action: #selector(doneNum))
         toolBar.items = [spaceBtn, barBtn]
         
         return toolBar
     }
     
     func doneNum() {
+        if tfStartNum.isFirstResponder {
+            print("start",tfStartNum.text)
+        }
+        
+        if tfEndNum.isFirstResponder {
+            print("end",tfEndNum.text)
+        }
+        
+        if tfFontNum.isFirstResponder {
+            print("font",tfFontNum.text)
+        }
+        
+        if tfRepeatNum.isFirstResponder {
+            print("count",tfRepeatNum.text)
+        }
+        
         self.view.endEditing(false)
     }
     

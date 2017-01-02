@@ -79,12 +79,12 @@
 				0B4BC17B1E174DDC00A32D24 /* AppDelegate.swift */,
 				0B4BC17D1E174DDC00A32D24 /* ViewController.swift */,
 				0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */,
-				0BFFE6CF1E182F5C004EF4C3 /* ColorPicker.swift */,
 				0B4BC17F1E174DDC00A32D24 /* Main.storyboard */,
 				0B4BC1851E174DDC00A32D24 /* Assets.xcassets */,
 				0B4BC1871E174DDC00A32D24 /* LaunchScreen.storyboard */,
 				0B4BC18A1E174DDD00A32D24 /* Info.plist */,
 				0B4BC1821E174DDC00A32D24 /* RandomNum.xcdatamodeld */,
+				0BFFE6CF1E182F5C004EF4C3 /* ColorPicker.swift */,
 				0BFFE6A11E175694004EF4C3 /* InfoPlist.strings */,
 				0BFFE6A81E175757004EF4C3 /* Localizable.strings */,
 			);
