@@ -104,6 +104,20 @@ import UIKit
         return UIColor(netHex: palette[index])
     }
     
+    func getColorHexAtPoint(point:CGPoint) -> Int
+    {
+        let cellWidth = self.frame.width / CGFloat(columns)
+        let cellHeight = self.frame.height / CGFloat(rows)
+        let i = Int(point.x / cellWidth)
+        let j = Int(point.y / cellHeight)
+        var index = i + columns * j
+        
+        index = index >= 0 ? index : 0
+        index = index < palette.count ? index : palette.count - 1
+        let netHex = palette[index]
+        return netHex
+    }
+    
     func getPointForColor(color:UIColor) -> CGPoint
     {
         var hue:CGFloat=0;
@@ -131,11 +145,12 @@ import UIKit
     {
         let point = gestureRecognizer.location(in: self)
         let color = getColorAtPoint(point: point)
+        let icolor = getColorHexAtPoint(point: point)
         
         let state = gestureRecognizer.state
         
         if state == .ended {
-            self.delegate?.ColorColorPickerTouched(sender: self, color: color, point: point, state: state)
+            self.delegate?.ColorColorPickerTouched(sender: self, color: color, icolor: icolor, point: point, state: state)
             zoomedPreview.isHidden = true
         }
         else {
@@ -169,6 +184,38 @@ extension UIColor
 
 internal protocol ColorPickerDelegate: class
 {
-    func ColorColorPickerTouched(sender:ColorPicker, color:UIColor, point:CGPoint, state:UIGestureRecognizerState)
+    func ColorColorPickerTouched(sender:ColorPicker, color:UIColor, icolor:Int, point:CGPoint, state:UIGestureRecognizerState)
+}
+
+// 把#ffffff颜色转为UIColor
+extension UIColor {
+    class func colorWithHexString(hex:String) ->UIColor {
+        
+        var cString = hex.trimmingCharacters(in:CharacterSet.whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            let index = cString.index(cString.startIndex, offsetBy:1)
+            cString = cString.substring(from: index)
+        }
+        
+        if (cString.characters.count != 6) {
+            return UIColor.red
+        }
+        
+        let rIndex = cString.index(cString.startIndex, offsetBy: 2)
+        let rString = cString.substring(to: rIndex)
+        let otherString = cString.substring(from: rIndex)
+        let gIndex = otherString.index(otherString.startIndex, offsetBy: 2)
+        let gString = otherString.substring(to: gIndex)
+        let bIndex = cString.index(cString.endIndex, offsetBy: -2)
+        let bString = cString.substring(from: bIndex)
+        
+        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        Scanner(string: rString).scanHexInt32(&r)
+        Scanner(string: gString).scanHexInt32(&g)
+        Scanner(string: bString).scanHexInt32(&b)
+        
+        return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
+    }
 }
 

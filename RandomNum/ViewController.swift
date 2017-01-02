@@ -193,7 +193,9 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         btnGo.setTitle(NSLocalizedString("My Interface", comment: ""), for: .normal)
         
         // 设置按钮颜色
-        
+        viewBgColor.backgroundColor = UIColor(netHex: Int((nowGlobalSet?.bgRGB)!))
+        viewNumColor.backgroundColor = UIColor(netHex: Int((nowGlobalSet?.numRGB)!))
+        viewTitleColor.backgroundColor = UIColor(netHex: Int((nowGlobalSet?.titleRGB)!))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -253,20 +255,37 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         oneGlobalSet.repeatNum = 0
         oneGlobalSet.numFont = 60
         
+        oneGlobalSet.bgRGB = 1668818
+        oneGlobalSet.numRGB = 16448250
+        oneGlobalSet.titleRGB = 16448250
+        
         context.insert(oneGlobalSet)
         appDelegate.saveContext()
         getCoreData()
     }
     
     
-    func ColorColorPickerTouched(sender: ColorPicker, color: UIColor, point: CGPoint, state: UIGestureRecognizerState)
+    func ColorColorPickerTouched(sender: ColorPicker, color: UIColor, icolor:Int, point: CGPoint, state: UIGestureRecognizerState)
     {
-        btnGo.backgroundColor = color
+
+        let tag = sender.tag
+        if tag == 1{
+            viewTitleColor.backgroundColor = color
+            nowGlobalSet?.titleRGB = Int32(icolor)
+        }else if tag == 2 {
+            viewNumColor.backgroundColor = color
+            nowGlobalSet?.numRGB = Int32(icolor)
+        }else if tag == 3 {
+            viewBgColor.backgroundColor = color
+            nowGlobalSet?.bgRGB = Int32(icolor)
+        }
+        appDelegate.saveContext()
+        
         sender.removeFromSuperview()
     }
 
     // 打开颜色选择器
-    func openSelColorView() -> Void {
+    func openSelColorView(itype:Int) -> Void {
         let pickerWidth = self.view.frame.size.width
         let pickerHeight = (pickerWidth * 11) / 19
         let colorPicker = ColorPicker(frame: CGRect(
@@ -276,19 +295,24 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
             height: pickerHeight
         ))
         
+        colorPicker.tag = itype
         colorPicker.delegate = self
         self.view.addSubview(colorPicker)
     }
     
     @IBAction func setTitleColorAction(_ sender: Any) {
-        openSelColorView()
-    }
-    
-    @IBAction func setBgColorAction(_ sender: Any) {
+        openSelColorView(itype: 1)
     }
     
     @IBAction func setNumColorAction(_ sender: Any) {
+        openSelColorView(itype: 2)
     }
+    
+    @IBAction func setBgColorAction(_ sender: Any) {
+        openSelColorView(itype: 3)
+    }
+    
+
 
     
 }
