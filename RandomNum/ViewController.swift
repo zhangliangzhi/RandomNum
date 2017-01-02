@@ -237,7 +237,8 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         if arrGlobalSet.count > 0 {
             nowGlobalSet = arrGlobalSet[0]
         }
-        print(nowGlobalSet)
+        
+//        print(nowGlobalSet)
     }
     
     // 第一次打开app，加入测试数据
@@ -249,7 +250,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         
         let oneGlobalSet = NSEntityDescription.insertNewObject(forEntityName: "CurGlobalSet", into: context) as! CurGlobalSet
         
-        oneGlobalSet.title = NSLocalizedString("Set custom title", comment: "")
+        oneGlobalSet.title = NSLocalizedString("My title", comment: "")
         oneGlobalSet.endID = 3
         oneGlobalSet.startID = 1
         oneGlobalSet.repeatNum = 0
