@@ -10,7 +10,8 @@ import UIKit
 
 class RandomNumViewController: UIViewController {
 
-    @IBOutlet weak var btnTitle: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var btnClick: UIButton!
     
     @IBOutlet weak var bgView: UIView!
@@ -33,10 +34,10 @@ class RandomNumViewController: UIViewController {
     }
 
     // 返回
-    @IBAction func goBack(_ sender: Any) {
+    @IBAction func backAction(_ sender: Any) {
         let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
         
-        self.present(rootViewController, animated: true) { 
+        self.present(rootViewController, animated: true) {
             
         }
     }
@@ -51,8 +52,9 @@ class RandomNumViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // 名称
         let txtColor = UIColor(netHex: Int((nowGlobalSet?.titleRGB)!))
-        btnTitle.setTitleColor(txtColor, for: .normal)
-        btnTitle.setTitle(nowGlobalSet?.title, for: .normal)
+
+        titleLabel.textColor = txtColor
+        titleLabel.text = nowGlobalSet?.title
         
         // 数字
         let numColor = UIColor(netHex: Int((nowGlobalSet?.numRGB)!))
