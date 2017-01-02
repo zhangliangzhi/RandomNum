@@ -236,16 +236,36 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pc-2B-kC5">
                                 <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05c-Fg-Fbr">
-                                        <rect key="frame" x="164" y="32" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05c-Fg-Fbr">
+                                        <rect key="frame" x="133" y="30" width="55" height="30"/>
+                                        <state key="normal" title="My Title"/>
                                         <connections>
                                             <action selector="goBack:" destination="WB4-QA-eSm" eventType="touchUpInside" id="xar-yP-xtn"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHq-04-maw">
+                                        <rect key="frame" x="139" y="220" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-dH-hWF">
+                                        <rect key="frame" x="143" y="400" width="34" height="30"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="btnClickAction:" destination="WB4-QA-eSm" eventType="touchUpInside" id="ow1-yD-cHM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="05c-Fg-Fbr" firstAttribute="centerX" secondItem="7pc-2B-kC5" secondAttribute="centerX" id="IdT-OF-gbU"/>
+                                    <constraint firstItem="MHq-04-maw" firstAttribute="centerX" secondItem="7pc-2B-kC5" secondAttribute="centerX" id="JGO-XB-BmG"/>
+                                    <constraint firstItem="05c-Fg-Fbr" firstAttribute="top" secondItem="7pc-2B-kC5" secondAttribute="top" constant="30" id="Xuy-qD-Hol"/>
+                                    <constraint firstItem="6Lf-dH-hWF" firstAttribute="centerX" secondItem="7pc-2B-kC5" secondAttribute="centerX" id="diu-eN-Ra6"/>
+                                    <constraint firstItem="MHq-04-maw" firstAttribute="centerY" secondItem="7pc-2B-kC5" secondAttribute="centerY" id="zL6-XH-uze"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Lf-dH-hWF" secondAttribute="bottom" constant="30" id="zSl-am-WAf"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,12 +278,14 @@
                     </view>
                     <connections>
                         <outlet property="bgView" destination="7pc-2B-kC5" id="oHs-h1-9FP"/>
+                        <outlet property="btnClick" destination="6Lf-dH-hWF" id="xHp-eg-91Q"/>
                         <outlet property="btnTitle" destination="05c-Fg-Fbr" id="GJc-GX-WFi"/>
+                        <outlet property="numLabel" destination="MHq-04-maw" id="UIL-Wg-Fk3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jje-zZ-O4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="814"/>
+            <point key="canvasLocation" x="1055.625" y="813.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SVP-c9-JG7">

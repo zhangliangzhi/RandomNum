@@ -10,37 +10,49 @@ import UIKit
 
 class RandomNumViewController: UIViewController {
 
-    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var btnTitle: UIButton!
+    @IBOutlet weak var btnClick: UIButton!
+    
+    @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var numLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-    @IBAction func goBack(_ sender: Any) {
+    @IBAction func btnClickAction(_ sender: Any) {
+    }
 
+    @IBAction func goBack(_ sender: Any) {
         let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
         
         self.present(rootViewController, animated: true) { 
             
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // 隐藏状态栏
+    override var prefersStatusBarHidden: Bool {
+        get {
+            return true
+        }
     }
-    */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let txtColor = UIColor(netHex: Int((nowGlobalSet?.titleRGB)!))
+        btnTitle.setTitleColor(txtColor, for: .normal)
+        btnClick.setTitleColor(txtColor, for: .normal)
+        
+        let numColor = UIColor(netHex: Int((nowGlobalSet?.numRGB)!))
+        numLabel.textColor = numColor
+        
+        let bgColor = UIColor(netHex: Int((nowGlobalSet?.bgRGB)!))
+        self.view.backgroundColor = bgColor
+        bgView.backgroundColor = bgColor
+
+    }
 
 }
