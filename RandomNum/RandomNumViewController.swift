@@ -25,14 +25,12 @@ class RandomNumViewController: UIViewController {
     }
     
     @IBAction func goBack(_ sender: Any) {
-//        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Main") as! ViewController
-//        
-//        self.present(mainViewController, animated: true) {
-//        
-//        }
-        self.removeFromParentViewController()
-    
-//        self.navigationController?.popViewController(animated: true)
+
+        let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
+        
+        self.present(rootViewController, animated: true) { 
+            
+        }
     }
 
     /*
