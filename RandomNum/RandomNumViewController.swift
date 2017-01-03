@@ -26,7 +26,7 @@ class RandomNumViewController: UIViewController {
         super.viewDidLoad()
         
         setNewBtnStatue()
-        numLabel.text = "-"
+        numLabel.text = "0"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,14 +48,21 @@ class RandomNumViewController: UIViewController {
             numLabel.text = String(tmpID)
         }else {
             // 结束 保存数据
+            tmpID = getRealRandomNum()
             let oneRandomData = NSEntityDescription.insertNewObject(forEntityName: "RandomData", into: context) as! RandomData
             oneRandomData.curTime = NSDate()
             oneRandomData.num = tmpID
+            arrRandomNum.insert(oneRandomData, at: 0)
             appDelegate.saveContext()
         }
         
         // 改变按钮 文字显示状态
         setNewBtnStatue()
+    }
+    
+    // 获取随机数值
+    func getRealRandomNum() -> Int64 {
+        return 0
     }
     
     // 点击显示日志

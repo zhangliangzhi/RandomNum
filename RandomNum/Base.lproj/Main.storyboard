@@ -319,6 +319,62 @@
             </objects>
             <point key="canvasLocation" x="1054" y="1433"/>
         </scene>
+        <!--History View Controller-->
+        <scene sceneID="9ld-xU-Axm">
+            <objects>
+                <viewController id="L2Q-c1-4B5" customClass="HistoryViewController" customModule="RandomNum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kjU-ib-7x3"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCD-MT-pZo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5cx-6z-iF5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jr2-o5-79j">
+                                <rect key="frame" x="0.0" y="20" width="414" height="566"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxC-9p-rb7">
+                                        <rect key="frame" x="157" y="536" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="WCc-D1-GMI"/>
+                                            <constraint firstAttribute="height" constant="30" id="gqi-5f-SJS"/>
+                                        </constraints>
+                                        <state key="normal" title="Back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CxC-9p-rb7" firstAttribute="centerX" secondItem="Jr2-o5-79j" secondAttribute="centerX" id="5jF-kP-IcJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="CxC-9p-rb7" secondAttribute="bottom" id="s5x-Bp-mv8"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-Fq-6hJ">
+                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gMm-dt-rEP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rxh-Fq-6hJ" firstAttribute="leading" secondItem="5cx-6z-iF5" secondAttribute="leading" id="0m8-6G-kOu"/>
+                            <constraint firstItem="YCD-MT-pZo" firstAttribute="top" secondItem="Jr2-o5-79j" secondAttribute="bottom" constant="150" id="37l-De-Vu8"/>
+                            <constraint firstItem="Jr2-o5-79j" firstAttribute="leading" secondItem="5cx-6z-iF5" secondAttribute="leading" id="BLF-4E-WBS"/>
+                            <constraint firstItem="Jr2-o5-79j" firstAttribute="top" secondItem="kjU-ib-7x3" secondAttribute="bottom" id="h35-nQ-t0N"/>
+                            <constraint firstAttribute="trailing" secondItem="rxh-Fq-6hJ" secondAttribute="trailing" id="qzJ-oe-Dai"/>
+                            <constraint firstItem="YCD-MT-pZo" firstAttribute="top" secondItem="rxh-Fq-6hJ" secondAttribute="bottom" id="vI4-rT-2uB"/>
+                            <constraint firstAttribute="trailing" secondItem="Jr2-o5-79j" secondAttribute="trailing" id="wkw-m4-Q3C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ign-Ov-0ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="1437"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SVP-c9-JG7">
             <objects>

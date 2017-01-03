@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1363861E1AE55D00FA138D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1363851E1AE55D00FA138D /* HistoryViewController.swift */; };
 		0B4BC17C1E174DDC00A32D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BC17B1E174DDC00A32D24 /* AppDelegate.swift */; };
 		0B4BC17E1E174DDC00A32D24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BC17D1E174DDC00A32D24 /* ViewController.swift */; };
 		0B4BC1811E174DDC00A32D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4BC17F1E174DDC00A32D24 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1363851E1AE55D00FA138D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0B4BC1781E174DDC00A32D24 /* RandomNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4BC17B1E174DDC00A32D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B4BC17D1E174DDC00A32D24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				0B4BC17B1E174DDC00A32D24 /* AppDelegate.swift */,
 				0B4BC17D1E174DDC00A32D24 /* ViewController.swift */,
 				0BFFE6AA1E1758A2004EF4C3 /* RandomNumViewController.swift */,
+				0B1363851E1AE55D00FA138D /* HistoryViewController.swift */,
 				0B4BC17F1E174DDC00A32D24 /* Main.storyboard */,
 				0B4BC1851E174DDC00A32D24 /* Assets.xcassets */,
 				0B4BC1871E174DDC00A32D24 /* LaunchScreen.storyboard */,
@@ -188,6 +191,7 @@
 				0B4BC17E1E174DDC00A32D24 /* ViewController.swift in Sources */,
 				0B4BC17C1E174DDC00A32D24 /* AppDelegate.swift in Sources */,
 				0B4BC1841E174DDC00A32D24 /* RandomNum.xcdatamodeld in Sources */,
+				0B1363861E1AE55D00FA138D /* HistoryViewController.swift in Sources */,
 				0BFFE6D01E182F5C004EF4C3 /* ColorPicker.swift in Sources */,
 				0BFFE6B51E181F08004EF4C3 /* INSPersistentStoreDescription.swift in Sources */,
 				0B9619D91E1A59CC00632388 /* TipsSwift.swift in Sources */,
