@@ -164,15 +164,29 @@ class LogTableViewController: UITableViewController, UITextViewDelegate {
         
         return toolBar
     }
+
     
-    func textViewDidEndEditing(_ textView: UITextView) {
-        doneCopy()
+    // textview 取消响应
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        if text == "\n" {
+            doneCopy()
+        }
+        return true
     }
+    
     
     func doneCopy() {
         let strd:String = logTextView.text!
         
-        print("copy ok", strd)
+        UIPasteboard.general.string = strd
+        
         logTextView.resignFirstResponder()
+        
+        // 给提示
+        if strd != "" {
+            TipsSwift.showTopWithText(NSLocalizedString("CopyS", comment: ""))
+        }
+        
     }
 }

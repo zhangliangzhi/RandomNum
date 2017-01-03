@@ -32,3 +32,4 @@
 "Stop"  = "Stop";
 "Log"   = "Log";
 "Copy"  = "Copy";
+"CopyS"  ="Has been copied to the clipboard";"
