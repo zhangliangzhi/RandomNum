@@ -11,7 +11,7 @@ import CoreData
 
 class RandomNumViewController: UIViewController {
 
-
+    var timer:Timer!
     @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var btnClick: UIButton!
@@ -20,17 +20,25 @@ class RandomNumViewController: UIViewController {
 
     @IBOutlet weak var numLabel: UILabel!
     
-    var isStart:Bool = true
+    var isStart:Bool = false
     var tmpID:Int64 = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setNewBtnStatue()
         numLabel.text = "0"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-
+        initNewBtnStatue()
+    }
+    
+    func setRtxt() {
+        let startID:Int64 = (nowGlobalSet?.startID)!
+        let endID:Int64 = (nowGlobalSet?.endID)!
+        let dID = endID - startID
+        let ndID:UInt32 = UInt32(dID)
+        let genID = Int64(arc4random_uniform(ndID+1))
+        numLabel.text = String(genID)
     }
     
     // 点击开始
@@ -38,15 +46,19 @@ class RandomNumViewController: UIViewController {
         let startID:Int64 = (nowGlobalSet?.startID)!
         let endID:Int64 = (nowGlobalSet?.endID)!
         let dID = endID - startID
-        
         // 改变了一次状态
-        if self.isStart {
+        if self.isStart == false {
             // 开始 播放随机数动画
+            timer = Timer.scheduledTimer(timeInterval: 0.08, target: self, selector: #selector(setRtxt), userInfo: nil, repeats: true)
+            
             let ndID:UInt32 = UInt32(dID)
             tmpID = Int64(arc4random_uniform(ndID+1))
             tmpID = tmpID + startID
             numLabel.text = String(tmpID)
         }else {
+            // 定时器取消
+            timer.invalidate()
+            
             // 结束 保存数据
 //            tmpID = getRealRandomNum()
             let oneRandomData = NSEntityDescription.insertNewObject(forEntityName: "RandomData", into: context) as! RandomData
@@ -121,6 +133,10 @@ class RandomNumViewController: UIViewController {
             self.isStart = true
             btnClick.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
         }
-        
+    }
+    
+    func initNewBtnStatue() {
+        self.isStart = false
+        btnClick.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
     }
 }
