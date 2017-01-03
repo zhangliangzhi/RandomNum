@@ -7,7 +7,7 @@
 */
 
 "Setting" = "随机数";
-"My title" = "我的标题";
+"My title" = "生成不重复随机数";
 "Done" = "完成";
 "Can not be empty" = "不能为空";
 "Must be number" = "必须是数字";
@@ -20,7 +20,7 @@
 "Set Title color:"      = "设置标题颜色:";
 "Set number color:"     = "设置数字颜色:";
 "Set bakcground color:" = "设置背景颜色:";
-"My Interface"          = "我的界面";
+"My Interface"          = "我的随机数界面";
 
 "Start Number"          = "开始数字";
 "End Number"            = "结束数字";

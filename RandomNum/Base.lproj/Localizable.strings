@@ -7,7 +7,7 @@
 */
 
 "Setting" = "RandomNum";
-"My title" = "My title";
+"My title" = "My title. Non repeated random number";
 "Done" = "Done";
 "Can not be empty" = "Can not be empty";
 "Must be number" = "Must be number";
@@ -20,7 +20,7 @@
 "Set Title color:"      = "Set Title color:";
 "Set number color:"     = "Set number color:";
 "Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Interface";
+"My Interface"          = "My Random Number UI";
 
 "Start Number"          = "Start Number";
 "End Number"            = "End Number";

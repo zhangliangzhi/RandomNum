@@ -136,7 +136,7 @@ class RandomNumViewController: UIViewController {
     
     // 点击显示日志
     @IBAction func showLogAction(_ sender: Any) {
-        print("show ok log")
+//        print("show ok log")
     }
 
     // 返回

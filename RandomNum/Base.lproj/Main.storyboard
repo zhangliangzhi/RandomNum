@@ -130,8 +130,9 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-5L-712">
-                                <rect key="frame" x="164" y="370" width="86" height="30"/>
-                                <state key="normal" title="My Interface"/>
+                                <rect key="frame" x="108.66666666666669" y="370" width="198" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="My Random Number UI"/>
                                 <connections>
                                     <action selector="goRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbi-BV-3gt"/>
                                 </connections>
