@@ -110,13 +110,13 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         
         if tfEndNum.isFirstResponder {
 //            print("end",tfEndNum.text)
-            var strStartID:String = tfEndNum.text!
-            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
-            if strStartID == "" {
+            var str:String = tfEndNum.text!
+            str = str.trimmingCharacters(in: .whitespaces)
+            if str == "" {
                 TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
                 return
             }
-            let iNum = Int64(strStartID)
+            let iNum = Int64(str)
             if iNum == nil {
                 TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
                 return
@@ -130,13 +130,13 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         
         if tfFontNum.isFirstResponder {
 //            print("font",tfFontNum.text)
-            var strStartID:String = tfFontNum.text!
-            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
-            if strStartID == "" {
+            var str:String = tfFontNum.text!
+            str = str.trimmingCharacters(in: .whitespaces)
+            if str == "" {
                 TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
                 return
             }
-            let iNum = Int32(strStartID)
+            let iNum = Int32(str)
             if iNum == nil {
                 TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
                 return
@@ -150,13 +150,13 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         
         if tfRepeatNum.isFirstResponder {
 //            print("count",tfRepeatNum.text)
-            var strStartID:String = tfRepeatNum.text!
-            strStartID = strStartID.trimmingCharacters(in: .whitespaces)
-            if strStartID == "" {
+            var str:String = tfRepeatNum.text!
+            str = str.trimmingCharacters(in: .whitespaces)
+            if str == "" {
                 TipsSwift.showTopWithText(NSLocalizedString("Can not be empty", comment: ""))
                 return
             }
-            let iNum = Int64(strStartID)
+            let iNum = Int32(str)
             if iNum == nil {
                 TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
                 return
