@@ -48,7 +48,7 @@ class RandomNumViewController: UIViewController {
             numLabel.text = String(tmpID)
         }else {
             // 结束 保存数据
-            tmpID = getRealRandomNum()
+//            tmpID = getRealRandomNum()
             let oneRandomData = NSEntityDescription.insertNewObject(forEntityName: "RandomData", into: context) as! RandomData
             oneRandomData.curTime = NSDate()
             oneRandomData.num = tmpID

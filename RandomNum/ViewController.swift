@@ -258,7 +258,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         oneGlobalSet.endID = 3
         oneGlobalSet.startID = 1
         oneGlobalSet.repeatNum = 0
-        oneGlobalSet.numFont = 60
+        oneGlobalSet.numFont = 150
         
         oneGlobalSet.bgRGB = 1668818
         oneGlobalSet.numRGB = 16448250
@@ -272,7 +272,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
     
     func ColorColorPickerTouched(sender: ColorPicker, color: UIColor, icolor:Int, point: CGPoint, state: UIGestureRecognizerState)
     {
-
+//        print(icolor)
         let tag = sender.tag
         if tag == 1{
             viewTitleColor.backgroundColor = color

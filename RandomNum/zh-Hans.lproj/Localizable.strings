@@ -14,7 +14,7 @@
 "Set success" = "设置成功";
 
 "Random range:"         = "随机范围:";
-"Number Font:"          = "数字字体:";
+"Number Font:"          = "数字字号:";
 "Repeat Count:"         = "重复次数:";
 "Set View Title:"       = "设置自定义界面名字:";
 "Set Title color:"      = "设置标题颜色:";
@@ -30,3 +30,4 @@
 
 "Start" = "开始";
 "Stop"  = "停止";
+"Log"   = "日志";
