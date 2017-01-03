@@ -8,9 +8,9 @@
 
 import UIKit
 
-class LogTableViewController: UITableViewController, UITextFieldDelegate {
+class LogTableViewController: UITableViewController, UITextViewDelegate {
 
-    @IBOutlet weak var logTextField: UITextField!
+    @IBOutlet weak var logTextView: UITextView!
     
     @IBOutlet var logTableView: UITableView!
     
@@ -19,7 +19,7 @@ class LogTableViewController: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.title = NSLocalizedString("Log", comment: "")
-        logTextField.delegate = self
+        logTextView.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -63,6 +63,9 @@ class LogTableViewController: UITableViewController, UITextFieldDelegate {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        logTextView.resignFirstResponder()
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -117,13 +120,14 @@ class LogTableViewController: UITableViewController, UITextFieldDelegate {
     }
 
     @IBAction func delAll(_ sender: Any) {
+        logTextView.resignFirstResponder()
         for i in 0..<arrRandomNum.count {
             let oneData = arrRandomNum[i]
             context.delete(oneData)
         }
         arrRandomNum.removeAll()
         logTableView.reloadData()
-        logTextField.text = ""
+        logTextView.text = ""
         appDelegate.saveContext()
     }
     
@@ -144,9 +148,9 @@ class LogTableViewController: UITableViewController, UITextFieldDelegate {
                 strd = strd + strnum + ", "
             }
         }
-        logTextField.text = strd
+        logTextView.text = strd
         
-        logTextField.inputAccessoryView = AddToolBar()
+        logTextView.inputAccessoryView = AddToolBar()
     }
     
     func AddToolBar() -> UIToolbar {
@@ -161,17 +165,14 @@ class LogTableViewController: UITableViewController, UITextFieldDelegate {
         return toolBar
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textViewDidEndEditing(_ textView: UITextView) {
         doneCopy()
-        
-        return true
     }
     
     func doneCopy() {
-        print("copy ok")
-        let strd:String = logTextField.text!
+        let strd:String = logTextView.text!
         
         print("copy ok", strd)
-        logTextField.resignFirstResponder()
+        logTextView.resignFirstResponder()
     }
 }

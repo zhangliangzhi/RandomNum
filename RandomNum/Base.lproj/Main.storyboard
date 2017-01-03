@@ -388,19 +388,20 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7r-GZ-9dk">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LUu-hA-YAp">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
-                                    <nil key="textColor"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
-                                </textField>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="Y7r-GZ-9dk" firstAttribute="top" secondItem="fv2-Fn-dNO" secondAttribute="top" id="8qA-Wn-ik1"/>
-                                <constraint firstItem="Y7r-GZ-9dk" firstAttribute="leading" secondItem="fv2-Fn-dNO" secondAttribute="leading" id="afs-3y-jbn"/>
-                                <constraint firstAttribute="trailing" secondItem="Y7r-GZ-9dk" secondAttribute="trailing" id="sGf-I0-xRg"/>
-                                <constraint firstAttribute="bottom" secondItem="Y7r-GZ-9dk" secondAttribute="bottom" id="zlc-9K-RhI"/>
+                                <constraint firstItem="LUu-hA-YAp" firstAttribute="top" secondItem="fv2-Fn-dNO" secondAttribute="top" id="dxx-Zg-lGh"/>
+                                <constraint firstItem="LUu-hA-YAp" firstAttribute="leading" secondItem="fv2-Fn-dNO" secondAttribute="leading" id="mx0-yF-XMW"/>
+                                <constraint firstAttribute="bottom" secondItem="LUu-hA-YAp" secondAttribute="bottom" id="uQ2-dL-X2p"/>
+                                <constraint firstAttribute="trailing" secondItem="LUu-hA-YAp" secondAttribute="trailing" id="zJT-eK-jZU"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -450,7 +451,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="logTableView" destination="HYa-ix-Yc1" id="eo8-OF-UbB"/>
-                        <outlet property="logTextField" destination="Y7r-GZ-9dk" id="7Zz-hi-jMf"/>
+                        <outlet property="logTextView" destination="LUu-hA-YAp" id="gq6-AB-X6I"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxZ-Ms-YJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
