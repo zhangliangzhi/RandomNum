@@ -32,4 +32,5 @@
 "Stop"  = "Stop";
 "Log"   = "Log";
 "Copy"  = "Copy";
-"CopyS"  ="Has been copied to the clipboard";"
+"CopyS"  ="Has been copied to the clipboard";
+"Must Big number" = "Must Big number";

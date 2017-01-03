@@ -87,7 +87,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
             self.view.endEditing(false)
         }
         
-        // 保持数值
+        // 数值
         if tfStartNum.isFirstResponder {
 //            print("start",tfStartNum.text)
             var strStartID:String = tfStartNum.text!
@@ -119,6 +119,12 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
             let iNum = Int64(str)
             if iNum == nil {
                 TipsSwift.showTopWithText(NSLocalizedString("Must be number", comment: ""))
+                return
+            }
+            
+            // 是否小于开始数字
+            if iNum! < (nowGlobalSet?.startID)!{
+                TipsSwift.showTopWithText(NSLocalizedString("Must Big number", comment: ""))
                 return
             }
             
