@@ -8,8 +8,10 @@
 
 import UIKit
 
-class LogTableViewController: UITableViewController {
+class LogTableViewController: UITableViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var logTextField: UITextField!
+    
     @IBOutlet var logTableView: UITableView!
     
     
@@ -17,6 +19,7 @@ class LogTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.title = NSLocalizedString("Log", comment: "")
+        logTextField.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -120,6 +123,55 @@ class LogTableViewController: UITableViewController {
         }
         arrRandomNum.removeAll()
         logTableView.reloadData()
+        logTextField.text = ""
         appDelegate.saveContext()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(false)
+    }
+    
+    // 初始化文本
+    override func viewWillAppear(_ animated: Bool) {
+        var strd:String = ""
+        for i in 0..<arrRandomNum.count {
+            let oneData = arrRandomNum[i]
+            let strnum:String = String(oneData.num)
+            
+            if i == arrRandomNum.count - 1 {
+                strd = strd + strnum
+            }else {
+                strd = strd + strnum + ", "
+            }
+        }
+        logTextField.text = strd
+        
+        logTextField.inputAccessoryView = AddToolBar()
+    }
+    
+    func AddToolBar() -> UIToolbar {
+        let toolBar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 35))
+        //        toolBar.tintColor = UIColor.blue
+        toolBar.backgroundColor = UIColor.gray
+        
+        let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let barBtn = UIBarButtonItem(title: NSLocalizedString("Copy", comment: ""), style: .plain, target: self, action: #selector(doneCopy))
+        toolBar.items = [spaceBtn, barBtn]
+        
+        return toolBar
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        doneCopy()
+        
+        return true
+    }
+    
+    func doneCopy() {
+        print("copy ok")
+        let strd:String = logTextField.text!
+        
+        print("copy ok", strd)
+        logTextField.resignFirstResponder()
     }
 }

@@ -237,7 +237,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-dH-hWF">
-                                        <rect key="frame" x="107.33333333333331" y="636" width="200" height="50"/>
+                                        <rect key="frame" x="107.66666666666669" y="636" width="200" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="B6C-py-LJB"/>
                                             <constraint firstAttribute="width" constant="200" id="Nyb-Tv-wVj"/>
@@ -249,13 +249,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHq-04-maw">
-                                        <rect key="frame" x="104.66666666666669" y="322.33333333333326" width="205" height="71.666666666666686"/>
+                                        <rect key="frame" x="104.66666666666669" y="322" width="205" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9X-uh-YXC">
-                                        <rect key="frame" x="104.66666666666669" y="322.33333333333326" width="205" height="71.666666666666686"/>
+                                        <rect key="frame" x="104.66666666666669" y="322" width="205" height="72"/>
                                         <connections>
                                             <action selector="showLogAction:" destination="WB4-QA-eSm" eventType="touchUpInside" id="IIF-Dz-HYF"/>
                                             <segue destination="v3Y-WZ-6G6" kind="show" id="qHF-je-rAn"/>
@@ -384,9 +384,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="fv2-Fn-dNO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7r-GZ-9dk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Y7r-GZ-9dk" firstAttribute="top" secondItem="fv2-Fn-dNO" secondAttribute="top" id="8qA-Wn-ik1"/>
+                                <constraint firstItem="Y7r-GZ-9dk" firstAttribute="leading" secondItem="fv2-Fn-dNO" secondAttribute="leading" id="afs-3y-jbn"/>
+                                <constraint firstAttribute="trailing" secondItem="Y7r-GZ-9dk" secondAttribute="trailing" id="sGf-I0-xRg"/>
+                                <constraint firstAttribute="bottom" secondItem="Y7r-GZ-9dk" secondAttribute="bottom" id="zlc-9K-RhI"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="yKJ-0T-BdX" detailTextLabel="sAn-HE-RQ1" style="IBUITableViewCellStyleSubtitle" id="790-Ds-mot">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="790-Ds-mot" id="88d-Nr-tsZ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -417,11 +436,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="uoY-yC-PzA">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="hFI-N4-J2Y">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="backAction:" destination="wuO-Es-Udv" id="me8-Fo-i8X"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="tYp-Gw-Fvp">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="delAll:" destination="wuO-Es-Udv" id="CJa-CD-YvQ"/>
                             </connections>
@@ -429,11 +450,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="logTableView" destination="HYa-ix-Yc1" id="eo8-OF-UbB"/>
+                        <outlet property="logTextField" destination="Y7r-GZ-9dk" id="7Zz-hi-jMf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxZ-Ms-YJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204.3478260869565" y="1839.9456521739132"/>
+            <point key="canvasLocation" x="1202.8985507246377" y="1839.9456521739132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SVP-c9-JG7">
@@ -462,7 +484,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v3Y-WZ-6G6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nVC-xx-tRO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nVC-xx-tRO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
