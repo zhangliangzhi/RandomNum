@@ -25,6 +25,7 @@ class RandomNumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initNewBtnStatue()
         numLabel.text = "0"
     }
     
