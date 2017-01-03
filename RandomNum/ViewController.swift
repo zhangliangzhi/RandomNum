@@ -74,6 +74,7 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         var strTitle:String = textField.text!
         strTitle = strTitle.trimmingCharacters(in: .whitespaces)
         nowGlobalSet?.title = strTitle
+        appDelegate.saveContext()
         
         textField.resignFirstResponder()
         return true

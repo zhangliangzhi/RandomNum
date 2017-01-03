@@ -269,10 +269,10 @@
                                             <action selector="goBack:" destination="WB4-QA-eSm" eventType="touchDown" id="5gD-iF-pzX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUy-uw-JA9">
-                                        <rect key="frame" x="0.0" y="17" width="414" height="80"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUy-uw-JA9">
+                                        <rect key="frame" x="0.0" y="2" width="414" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="hOm-15-6bF"/>
+                                            <constraint firstAttribute="height" constant="120" id="hOm-15-6bF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -289,7 +289,7 @@
                                     <constraint firstItem="FUy-uw-JA9" firstAttribute="leading" secondItem="7pc-2B-kC5" secondAttribute="leading" id="Jgi-k3-jZI"/>
                                     <constraint firstItem="T9X-uh-YXC" firstAttribute="centerX" secondItem="MHq-04-maw" secondAttribute="centerX" id="MKf-Zn-wyA"/>
                                     <constraint firstItem="T9X-uh-YXC" firstAttribute="height" secondItem="MHq-04-maw" secondAttribute="height" id="O1Q-pr-np4"/>
-                                    <constraint firstItem="FUy-uw-JA9" firstAttribute="top" secondItem="gIK-eU-cTM" secondAttribute="bottom" constant="-165" id="Ywq-Wy-nXw"/>
+                                    <constraint firstItem="FUy-uw-JA9" firstAttribute="top" secondItem="gIK-eU-cTM" secondAttribute="bottom" constant="-180" id="Ywq-Wy-nXw"/>
                                     <constraint firstItem="T9X-uh-YXC" firstAttribute="centerY" secondItem="MHq-04-maw" secondAttribute="centerY" id="aXx-2a-tfP"/>
                                     <constraint firstItem="6Lf-dH-hWF" firstAttribute="centerX" secondItem="7pc-2B-kC5" secondAttribute="centerX" id="diu-eN-Ra6"/>
                                     <constraint firstItem="T9X-uh-YXC" firstAttribute="width" secondItem="MHq-04-maw" secondAttribute="width" id="kN8-js-FKU"/>
@@ -380,9 +380,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uyu-9Z-xtv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f6a-hs-m7a">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="f6a-hs-m7a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
