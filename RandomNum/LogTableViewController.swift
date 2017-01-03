@@ -138,8 +138,9 @@ class LogTableViewController: UITableViewController, UITextViewDelegate {
     // 初始化文本
     override func viewWillAppear(_ animated: Bool) {
         var strd:String = ""
-        for i in 0..<arrRandomNum.count {
-            let oneData = arrRandomNum[i]
+        let count = arrRandomNum.count
+        for i in 0..<count {
+            let oneData = arrRandomNum[count-i-1]
             let strnum:String = String(oneData.num)
             
             if i == arrRandomNum.count - 1 {
