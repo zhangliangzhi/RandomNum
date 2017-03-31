@@ -6,31 +6,31 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting"               = "RandomNum";
-"My title"              = "My custom title, no repeated random number";
-"Done"                  = "Done";
-"Can not be empty"      = "Can not be empty";
-"Must be number"        = "Must be number";
-"Set success"           = "Set success";
+"Setting"               = "난수";
+"My title"              = "내 사용자 정의 제목, 반복 된 난수 없음";
+"Done"                  = "끝난";
+"Can not be empty"      = "비어있을 수 없다";
+"Must be number"        = "숫자 여야합니다";
+"Set success"           = "성공 설정";
 
-"Random range:"         = "Random range:";
-"Number Font:"          = "Number Font:";
-"Repeat Count:"         = "Repeat count:";
-"Set View Title:"       = "Set View Title:";
-"Set Title color:"      = "Set Title color:";
-"Set number color:"     = "Set number color:";
-"Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Random Number UI";
+"Random range:"         = "무작위 범위 :";
+"Number Font:"          = "숫자 글꼴 :";
+"Repeat Count:"         = "반복 횟수 :";
+"Set View Title:"       = "제목보기 설정 :";
+"Set Title color:"      = "제목 색 설정 :";
+"Set number color:"     = "숫자 색상 설정 :";
+"Set bakcground color:" = "배경 색상 설정 :";
+"My Interface"          = "내 임의 숫자 UI";
 
-"Start Number"          = "Start Number";
-"End Number"            = "End Number";
+"Start Number"          = "시작 번호";
+"End Number"            = "최종 번호";
 "Enter Num Font"        = "Enter Num Font";
-"Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title, click back";
+"Enter Repeat Count"    = "반복 횟수 입력";
+"Enter custom title"    = "맞춤 제목 입력, 뒤로 클릭";
 
-"Start"                 = "Start";
-"Stop"                  = "Stop";
-"Log"                   = "Log";
-"Copy"                  = "Copy";
-"CopyS"                 ="Has been copied to the clipboard";
-"Must Big number"       = "Must Big number";
+"Start"                 = "스타트";
+"Stop"                  = "중지";
+"Log"                   = "로그";
+"Copy"                  = "부";
+"CopyS"                 = "클립 보드에 복사되었습니다";
+"Must Big number"       = "반드시 큰 숫자";

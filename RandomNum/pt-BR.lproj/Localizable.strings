@@ -6,31 +6,31 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting"               = "RandomNum";
-"My title"              = "My custom title, no repeated random number";
-"Done"                  = "Done";
-"Can not be empty"      = "Can not be empty";
-"Must be number"        = "Must be number";
-"Set success"           = "Set success";
+"Setting"               = "Número Aleatório";
+"My title"              = "Meu título personalizado, nenhum número aleatório repetido";
+"Done"                  = "Feito";
+"Can not be empty"      = "Não pode estar vazio";
+"Must be number"        = "Deve ser número";
+"Set success"           = "Set sucesso";
 
-"Random range:"         = "Random range:";
-"Number Font:"          = "Number Font:";
-"Repeat Count:"         = "Repeat count:";
-"Set View Title:"       = "Set View Title:";
-"Set Title color:"      = "Set Title color:";
-"Set number color:"     = "Set number color:";
-"Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Random Number UI";
+"Random range:"         = "Margem aleatória:";
+"Number Font:"          = "Fonte número:";
+"Repeat Count:"         = "Repetir contagem:";
+"Set View Title:"       = "Definir Título da Vista:";
+"Set Title color:"      = "Definir a cor do título:";
+"Set number color:"     = "Definir a cor do número:";
+"Set bakcground color:" = "Definir a cor do bakcground:";
+"My Interface"          = "Minha UI de número aleatório";
 
-"Start Number"          = "Start Number";
+"Start Number"          = "Número de início";
 "End Number"            = "End Number";
 "Enter Num Font"        = "Enter Num Font";
 "Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title, click back";
+"Enter custom title"    = "Digite o título personalizado, clique novamente";
 
-"Start"                 = "Start";
-"Stop"                  = "Stop";
-"Log"                   = "Log";
-"Copy"                  = "Copy";
-"CopyS"                 ="Has been copied to the clipboard";
-"Must Big number"       = "Must Big number";
+"Start"                 = "Começar";
+"Stop"                  = "Pare";
+"Log"                   = "Registro";
+"Copy"                  = "Cópia de";
+"CopyS"                 = "Foi copiado para a área de transferência";
+"Must Big number"       = "Deve grande número";

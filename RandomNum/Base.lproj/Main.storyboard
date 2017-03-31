@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uyu-9Z-xtv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uyu-9Z-xtv">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -130,7 +130,10 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-5L-712">
-                                <rect key="frame" x="108.66666666666669" y="370" width="198" height="35"/>
+                                <rect key="frame" x="50" y="370" width="314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6dD-ET-jWc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="My Random Number UI"/>
                                 <connections>
@@ -157,6 +160,7 @@
                             <constraint firstItem="uHs-i7-tRO" firstAttribute="width" secondItem="1bD-BV-cyT" secondAttribute="width" id="Bp5-fz-Jio"/>
                             <constraint firstItem="0OB-tr-Loc" firstAttribute="leading" secondItem="ahV-VR-GPD" secondAttribute="leading" id="ByK-rV-Jqd"/>
                             <constraint firstItem="Lno-Qs-OdS" firstAttribute="top" secondItem="Pg5-oE-2ww" secondAttribute="bottom" constant="8" id="CBl-DG-A7y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qlE-5L-712" secondAttribute="trailing" constant="30" id="CLh-I4-hNP"/>
                             <constraint firstItem="0OB-tr-Loc" firstAttribute="top" secondItem="ahV-VR-GPD" secondAttribute="bottom" constant="5" id="Fe2-Jn-Bfn"/>
                             <constraint firstItem="ABI-6Z-v76" firstAttribute="height" secondItem="0OB-tr-Loc" secondAttribute="height" id="GSu-2B-yb8"/>
                             <constraint firstItem="1bD-BV-cyT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="IV6-L8-Ndo"/>
@@ -186,6 +190,7 @@
                             <constraint firstItem="Jsp-54-0eD" firstAttribute="leading" secondItem="Kyo-AG-Lrs" secondAttribute="trailing" constant="8" id="kJ8-Ei-lhR"/>
                             <constraint firstItem="LOq-3r-CDf" firstAttribute="top" secondItem="1bD-BV-cyT" secondAttribute="bottom" constant="1" id="lFa-gG-KO9"/>
                             <constraint firstItem="ABI-6Z-v76" firstAttribute="width" secondItem="0OB-tr-Loc" secondAttribute="width" id="lbE-oa-wGF"/>
+                            <constraint firstItem="qlE-5L-712" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="ndp-Uc-f4S"/>
                             <constraint firstItem="uHs-i7-tRO" firstAttribute="centerX" secondItem="1bD-BV-cyT" secondAttribute="centerX" id="oYY-bX-03C"/>
                             <constraint firstItem="0OB-tr-Loc" firstAttribute="height" secondItem="ahV-VR-GPD" secondAttribute="height" id="okN-Il-bqO"/>
                             <constraint firstItem="jll-aw-ybY" firstAttribute="width" secondItem="Lno-Qs-OdS" secondAttribute="width" id="shy-Yl-ra1"/>
@@ -410,18 +415,18 @@
                                 <rect key="frame" x="0.0" y="116" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="790-Ds-mot" id="88d-Nr-tsZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yKJ-0T-BdX">
-                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="5" width="33.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sAn-HE-RQ1">
-                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                            <rect key="frame" x="14.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>

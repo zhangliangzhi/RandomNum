@@ -6,31 +6,31 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting"               = "RandomNum";
-"My title"              = "My custom title, no repeated random number";
-"Done"                  = "Done";
-"Can not be empty"      = "Can not be empty";
-"Must be number"        = "Must be number";
-"Set success"           = "Set success";
+"Setting"               = "Zufallszahl";
+"My title"              = "Mein kundenspezifischer Titel, keine wiederholte Zufallszahl";
+"Done"                  = "Erledigt";
+"Can not be empty"      = "Kann nicht leer sein";
+"Must be number"        = "Muss Nummer sein";
+"Set success"           = "Erfolg setzen";
 
 "Random range:"         = "Random range:";
-"Number Font:"          = "Number Font:";
+"Number Font:"          = "Anzahl Schriftart:";
 "Repeat Count:"         = "Repeat count:";
 "Set View Title:"       = "Set View Title:";
-"Set Title color:"      = "Set Title color:";
-"Set number color:"     = "Set number color:";
-"Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Random Number UI";
+"Set Title color:"      = "Set Titelfarbe:";
+"Set number color:"     = "Set Anzahl Farbe:";
+"Set bakcground color:" = "Set bakcground Farbe:";
+"My Interface"          = "Meine zufällige Nummer UI";
 
-"Start Number"          = "Start Number";
-"End Number"            = "End Number";
-"Enter Num Font"        = "Enter Num Font";
+"Start Number"          = "Startnummer";
+"End Number"            = "Endnummer";
+"Enter Num Font"        = "Num Schriftart eingeben";
 "Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title, click back";
+"Enter custom title"    = "Geben Sie benutzerdefinierten Titel, klicken Sie zurück";
 
-"Start"                 = "Start";
-"Stop"                  = "Stop";
+"Start"                 = "Anfang";
+"Stop"                  = "Halt";
 "Log"                   = "Log";
-"Copy"                  = "Copy";
-"CopyS"                 ="Has been copied to the clipboard";
-"Must Big number"       = "Must Big number";
+"Copy"                  = "Kopieren";
+"CopyS"                 = "Wurde in die Zwischenablage kopiert";
+"Must Big number"       = "Muss große Zahl";

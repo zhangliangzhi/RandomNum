@@ -202,6 +202,18 @@ class ViewController: UIViewController, ColorPickerDelegate, UITextFieldDelegate
         btnbgColor.setTitle(NSLocalizedString("Set bakcground color:", comment: ""), for: .normal)
         btnGo.setTitle(NSLocalizedString("My Interface", comment: ""), for: .normal)
         
+
+        
+        // 按钮颜色
+//        self.setBackgroundImage(self.imageWithColorToButton(colorButton: UIColor(red: 99/255, green: 191/255, blue: 225/255, alpha: 1)), for: UIControlState.normal)
+//        btnGo.setBackgroundImage(self.imageWithColorToButton(colorButton: UIColor(red: 63/255, green: 175/255, blue: 271/255, alpha: 1)), for: UIControlState.highlighted)
+        btnGo.backgroundColor = UIColor(red: 99/255, green: 191/255, blue: 225/255, alpha: 1)
+        btnGo.setTitleColor(UIColor.white, for: UIControlState.normal)
+        btnGo.layer.borderColor = UIColor(red: 80/255, green: 183/255, blue: 221/255, alpha: 1).cgColor
+        btnGo.layer.borderWidth = 1.0
+        btnGo.layer.cornerRadius = 4.0
+        btnGo.layer.masksToBounds = true
+        
         // 设置按钮颜色
         viewBgColor.backgroundColor = UIColor(netHex: Int((nowGlobalSet?.bgRGB)!))
         viewNumColor.backgroundColor = UIColor(netHex: Int((nowGlobalSet?.numRGB)!))

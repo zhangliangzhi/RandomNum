@@ -6,31 +6,31 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting"               = "RandomNum";
-"My title"              = "My custom title, no repeated random number";
-"Done"                  = "Done";
-"Can not be empty"      = "Can not be empty";
-"Must be number"        = "Must be number";
-"Set success"           = "Set success";
+"Setting"               = "乱数";
+"My title"              = "私のカスタムタイトル、繰り返し乱数はありません";
+"Done"                  = "完了";
+"Can not be empty"      = "空ではありません";
+"Must be number"        = "数字でなければならない";
+"Set success"           = "成功を設定する";
 
-"Random range:"         = "Random range:";
-"Number Font:"          = "Number Font:";
-"Repeat Count:"         = "Repeat count:";
-"Set View Title:"       = "Set View Title:";
-"Set Title color:"      = "Set Title color:";
-"Set number color:"     = "Set number color:";
-"Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Random Number UI";
+"Random range:"         = "ランダム範囲：";
+"Number Font:"          = "Number Font：";
+"Repeat Count:"         = "繰り返しカウント：";
+"Set View Title:"       = "ビューのタイトルを設定する：";
+"Set Title color:"      = "タイトルカラーを設定する：";
+"Set number color:"     = "セット番号色：";
+"Set bakcground color:" = "バックグラウンドカラーを設定する：";
+"My Interface"          = "私の乱数UI";
 
-"Start Number"          = "Start Number";
+"Start Number"          = "開始番号";
 "End Number"            = "End Number";
 "Enter Num Font"        = "Enter Num Font";
-"Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title, click back";
+"Enter Repeat Count"    = "繰り返し回数を入力してください";
+"Enter custom title"    = "カスタムタイトルを入力して、戻る";
 
-"Start"                 = "Start";
-"Stop"                  = "Stop";
-"Log"                   = "Log";
-"Copy"                  = "Copy";
-"CopyS"                 ="Has been copied to the clipboard";
-"Must Big number"       = "Must Big number";
+"Start"                 = "開始";
+"Stop"                  = "やめる";
+"Log"                   = "ログ";
+"Copy"                  = "コピー";
+"CopyS"                 = "クリップボードにコピーされました";
+"Must Big number"       = "デジタルは開始数よりも大きいです";

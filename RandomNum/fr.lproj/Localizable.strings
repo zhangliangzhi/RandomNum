@@ -6,31 +6,31 @@
   Copyright © 2016年 xigk. All rights reserved.
 */
 
-"Setting"               = "RandomNum";
-"My title"              = "My custom title, no repeated random number";
-"Done"                  = "Done";
-"Can not be empty"      = "Can not be empty";
-"Must be number"        = "Must be number";
-"Set success"           = "Set success";
+"Setting"               = "Nombre aléatoire";
+"My title"              = "Mon titre personnalisé, aucun numéro aléatoire répété";
+"Done"                  = "Terminé";
+"Can not be empty"      = "Ne peux pas être vide";
+"Must be number"        = "Doit être le numéro";
+"Set success"           = "Définir le succès";
 
-"Random range:"         = "Random range:";
-"Number Font:"          = "Number Font:";
+"Random range:"         = "Gamme aléatoire:";
+"Number Font:"          = "Police de numéro:";
 "Repeat Count:"         = "Repeat count:";
-"Set View Title:"       = "Set View Title:";
-"Set Title color:"      = "Set Title color:";
-"Set number color:"     = "Set number color:";
-"Set bakcground color:" = "Set bakcground color:";
-"My Interface"          = "My Random Number UI";
+"Set View Title:"       = "Afficher le titre de la vue:";
+"Set Title color:"      = "Définir la couleur du titre:";
+"Set number color:"     = "Définir la couleur du numéro:";
+"Set bakcground color:" = "Set bakcground couleur:";
+"My Interface"          = "Mon UI à nombre aléatoire";
 
-"Start Number"          = "Start Number";
-"End Number"            = "End Number";
-"Enter Num Font"        = "Enter Num Font";
-"Enter Repeat Count"    = "Enter Repeat Count";
-"Enter custom title"    = "Enter custom title, click back";
+"Start Number"          = "Numéro de début";
+"End Number"            = "Numéro de fin";
+"Enter Num Font"        = "Entrez la police numérique";
+"Enter Repeat Count"    = "Entrez le nombre de répétitions";
+"Enter custom title"    = "Entrez le titre personnalisé, cliquez de nouveau";
 
-"Start"                 = "Start";
-"Stop"                  = "Stop";
-"Log"                   = "Log";
-"Copy"                  = "Copy";
-"CopyS"                 ="Has been copied to the clipboard";
-"Must Big number"       = "Must Big number";
+"Start"                 = "Début";
+"Stop"                  = "Arrêtez";
+"Log"                   = "Bûche";
+"Copy"                  = "Copie";
+"CopyS"                 = "A été copié dans le presse-papiers";
+"Must Big number"       = "Must Big Number";
