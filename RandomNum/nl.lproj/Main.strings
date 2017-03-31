@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = "Random range："; ObjectID = "1bD-BV-cyT"; */
+"1bD-BV-cyT.text" = "Random range：";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "6Lf-dH-hWF"; */
+"6Lf-dH-hWF.normalTitle" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "CxC-9p-rb7"; */
+"CxC-9p-rb7.normalTitle" = "Back";
+
+/* Class = "UITextField"; placeholder = "Repeat Count"; ObjectID = "DMB-cT-Kne"; */
+"DMB-cT-Kne.placeholder" = "Repeat Count";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FUy-uw-JA9"; */
+"FUy-uw-JA9.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Enter custom Title"; ObjectID = "GVu-cO-6Kc"; */
+"GVu-cO-6Kc.placeholder" = "Enter custom Title";
+
+/* Class = "UITextField"; placeholder = "Number Font"; ObjectID = "Jsp-54-0eD"; */
+"Jsp-54-0eD.placeholder" = "Number Font";
+
+/* Class = "UILabel"; text = "Number Font:"; ObjectID = "Kyo-AG-Lrs"; */
+"Kyo-AG-Lrs.text" = "Number Font:";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "LOq-3r-CDf"; */
+"LOq-3r-CDf.text" = "~";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "LUu-hA-YAp"; */
+"LUu-hA-YAp.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Set Number color:"; ObjectID = "Lno-Qs-OdS"; */
+"Lno-Qs-OdS.normalTitle" = "Set Number color:";
+
+/* Class = "UILabel"; text = "123456"; ObjectID = "MHq-04-maw"; */
+"MHq-04-maw.text" = "123456";
+
+/* Class = "UITextField"; placeholder = "Start Number"; ObjectID = "OqR-Hx-syZ"; */
+"OqR-Hx-syZ.placeholder" = "Start Number";
+
+/* Class = "UIButton"; normalTitle = "Set Title color:"; ObjectID = "Pg5-oE-2ww"; */
+"Pg5-oE-2ww.normalTitle" = "Set Title color:";
+
+/* Class = "UITextField"; placeholder = "End Number"; ObjectID = "fIi-UU-747"; */
+"fIi-UU-747.placeholder" = "End Number";
+
+/* Class = "UIButton"; normalTitle = "Set background color:"; ObjectID = "jll-aw-ybY"; */
+"jll-aw-ybY.normalTitle" = "Set background color:";
+
+/* Class = "UIButton"; normalTitle = "My Random Number UI"; ObjectID = "qlE-5L-712"; */
+"qlE-5L-712.normalTitle" = "My Random Number UI";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "sAn-HE-RQ1"; */
+"sAn-HE-RQ1.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Repeat Count:"; ObjectID = "t1z-6y-KRR"; */
+"t1z-6y-KRR.text" = "Repeat Count:";
+
+/* Class = "UILabel"; text = "Set View Title:"; ObjectID = "uHs-i7-tRO"; */
+"uHs-i7-tRO.text" = "Set View Title:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yKJ-0T-BdX"; */
+"yKJ-0T-BdX.text" = "Title";

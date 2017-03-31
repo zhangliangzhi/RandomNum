@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  RandomNum
+
+  Created by ZhangLiangZhi on 2016/12/31.
+  Copyright © 2016年 xigk. All rights reserved.
+*/
+
+"Setting"               = "RandomNum";
+"My title"              = "My custom title, no repeated random number";
+"Done"                  = "Done";
+"Can not be empty"      = "Can not be empty";
+"Must be number"        = "Must be number";
+"Set success"           = "Set success";
+
+"Random range:"         = "Random range:";
+"Number Font:"          = "Number Font:";
+"Repeat Count:"         = "Repeat count:";
+"Set View Title:"       = "Set View Title:";
+"Set Title color:"      = "Set Title color:";
+"Set number color:"     = "Set number color:";
+"Set bakcground color:" = "Set bakcground color:";
+"My Interface"          = "My Random Number UI";
+
+"Start Number"          = "Start Number";
+"End Number"            = "End Number";
+"Enter Num Font"        = "Enter Num Font";
+"Enter Repeat Count"    = "Enter Repeat Count";
+"Enter custom title"    = "Enter custom title, click back";
+
+"Start"                 = "Start";
+"Stop"                  = "Stop";
+"Log"                   = "Log";
+"Copy"                  = "Copy";
+"CopyS"                 ="Has been copied to the clipboard";
+"Must Big number"       = "Must Big number";
